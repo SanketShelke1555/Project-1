@@ -194,4 +194,14 @@
     flex-wrap: wrap;
 }
 
+.about_para{
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+}
+
+.lambo_about_image{
+    display: flex;
+    justify-content: center;
+}
  
