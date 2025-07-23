@@ -57,7 +57,7 @@ body {
 }
 
 .container1 {
-    height: 627px;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
