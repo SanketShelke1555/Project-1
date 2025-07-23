@@ -82,9 +82,9 @@ body {
 
 .card {
     background-color: #ebefd5;
-    width: 90%;
-    max-width: 300px;
-    min-height: 580px; 
+    width: 100%;
+    max-width: 310px;
+    min-height: 520px; 
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
