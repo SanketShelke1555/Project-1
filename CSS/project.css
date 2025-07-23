@@ -39,6 +39,7 @@ body {
     width: 50%;
     font-weight: bold;
     font-size: xx-large;
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
