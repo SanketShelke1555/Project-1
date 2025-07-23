@@ -1,288 +1,435 @@
-  body {
-      margin: 0px;
-      padding: 0px;
+/* Base Styles */
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
-  }
+.bg {
+    background-image: linear-gradient(180.4deg, rgba(0, 6, 10, 1) 1%, rgba(1, 190, 237, 1) 91.4%);
+}
 
-  .bg {
-      background-image: linear-gradient(180.4deg, rgba(0, 6, 10, 1) 1%, rgba(1, 190, 237, 1) 91.4%);
-  }
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: transparent;
+    z-index: 1000;
+}
 
-  .navbar {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-  }
+.logo {
+    height: 85px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-  .logo {
-      height: 85px;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-  }
+.logo:hover {
+    cursor: pointer;
+}
 
-  .logo:hover {
-      cursor: pointer;
-  }
+.img {
+    height: 80px;
+    margin-left: 20px;
+}
 
-  .img {
-      height: 80px;
-      margin-left: 20px;
-  }
+.menu {
+    align-items: start;
+    width: 50%;
+    font-weight: bold;
+    font-size: xx-large;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-right: 70px;
+}
 
-  .menu {
-      align-items: start;
-      width: 50%;
-      font-weight: bold;
-      font-size: xx-large;
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      margin-right: 70px;
+.mn {
+    text-decoration: none;
+    color: white;
+}
 
-  }
+.mn:hover {
+    color: rgb(136, 248, 252);
+    cursor: pointer;
+}
 
-  .mn {
-      text-decoration: none;
-      color: white
-  }
+.container1 {
+    height: 627px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    object-fit: cover;
+    flex-wrap: wrap;
+}
 
-  .mn:hover {
-      color: rgb(136, 248, 252);
-      cursor: pointer;
-  }
+.lamboimg {
+    height: 627px;
+    width: 100%;
+    object-fit: cover;
+}
 
-  .container1 {
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+}
 
-      height: 627px;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      object-fit: cover;
-  }
 
-  .lamboimg {
-      height: 627px;
-      width: 100%;
-  }
+.card {
+    background-color: #ebefd5;
+    width: 90%;
+    max-width: 300px;
+    min-height: 580px; 
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
 
-  .card {
-      background-color: #ebefd5;
-      height: 450px;
-      width: 300px;
-      border-radius: 20px;
-      cursor: pointer;
-      display: flex;
-      gap: 10px;
-  }
+.card:hover {
+    transform: translateY(-5px);
+}
 
-  .card:hover {
-      box-shadow: 10px 20px 15px rgba(0, 0, 0, 0.2);
-  }
 
-  .container2 {
-      height: 100%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      margin: 80px;
-  }
+.lambocard {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px 20px;
+    flex-grow: 1;
+}
 
-  .para {
-      display: flex;
-      align-items: center;
-  }
 
-  .urus {
-      height: 200px;
-      width: 100%;
-      border-radius: 20px 20px 0px 0px;
-      align-items: center;
-      object-fit: cover;
-  }
+.urus {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
 
-  .carname {
-      display: flex;
-      justify-content: center;
-  }
 
-  .footer {
-      background-image: linear-gradient(180.4deg, rgba(0, 6, 10, 1) 1%, rgba(1, 190, 237, 1) 91.4%);
+.carname {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0 10px;
+    text-align: center;
+    color: black;
+}
 
-      display: flex;
-      align-items: start;
-      padding-top: 80px;
-      flex-wrap: wrap;
 
-  }
+.para {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #333;
+    margin: 0;
+}
 
-  .location {
-      height: 50px;
-  }
 
-  .location:hover {
-      cursor: pointer;
-  }
+@media (max-width: 768px) {
+    .container2 {
+        padding: 20px;
+        gap: 20px;
+    }
 
-  .fotter-logo {
-      display: flex;
-      flex-direction: column;
-      width: 100px;
-      align-items: center;
-      margin-left: 30px;
-      padding-top: 22px;
-      flex-wrap: wrap;
-  }
+    .card {
+        width: 100%;
+        max-width: none;
+        min-height: unset; 
+    }
 
-  .text {
-      width: 300px;
-      font-size: 30px;
-      display: flex;
-      flex-direction: column;
-      margin-top: 20px;
-      margin-left: 20px;
-      color: white;
-  }
+    .carname {
+        font-size: 20px;
+    }
 
-  .text:hover {
-      cursor: pointer;
-  }
+    .para {
+        font-size: 13px;
+    }
+}
+.footer {
+    background-image: linear-gradient(180.4deg, rgba(0, 6, 10, 1) 1%, rgba(1, 190, 237, 1) 91.4%);
+    display: flex;
+    align-items: start;
+    padding-top: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-  .footer-media {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      width: 900px;
-      flex-wrap: wrap;
-  }
+.location {
+    height: 50px;
+}
 
-  .social {
-      height: 60px;
-      cursor: pointer;
-  }
+.location:hover {
+    cursor: pointer;
+}
 
-  .social_logo {
-      display: flex;
-      justify-content: space-evenly;
-      width: 500px;
-      flex-wrap: wrap;
-  }
+.fotter-logo {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    align-items: center;
+    margin-left: 30px;
+    padding-top: 22px;
+    flex-wrap: wrap;
+}
 
-  .description_about {
+.text {
+    width: 90%;
+    max-width: 300px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    text-align: center;
+}
 
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      padding-bottom: 40px;
-  }
+.text:hover {
+    cursor: pointer;
+}
 
-  .about_image {
-      height: 300px;
-      margin: 90px 0px 0px 50px;
-      display: flex;
-      flex-wrap: wrap;
-  }
+.footer-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 900px;
+    flex-wrap: wrap;
+}
 
-  .text2 {
-      font-size: x-large;
-      width: 900px;
-      margin: 90px 10px 0px 50px;
-      font-style: italic;
-      flex-wrap: wrap;
-  }
+.social {
+    height: 60px;
+    cursor: pointer;
+}
 
-  .about_para {
-      font-size: x-large;
-      display: flex;
-      align-items: center;
-  }
+.social_logo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 500px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
-  .lambo_about_image {
-      display: flex;
-      justify-content: center;
-  }
+.description_about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    justify-content: center;
+}
 
-  .design {
-      height: 600px;
-      background-color: rgb(0, 0, 0);
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-  }
+.about_image {
+    height: 300px;
+    margin: 90px 0px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-  .design_block1 {
-      font-size: xx-large;
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      padding-top: 55px;
-      flex-wrap: wrap;
-      align-items: center;
-      color: white;
-  }
+.text2 {
+    font-size: x-large;
+    width: 90%;
+    max-width: 900px;
+    margin: 90px 10px 0px 50px;
+    font-style: italic;
+    flex-wrap: wrap;
+    text-align: center;
+}
 
-  .design_block2 {
-      margin: 50px;
-  }
+.about_para {
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+}
 
-  .design2 {
-      background-color: black;
-      display: flex;
-      justify-content: space-between;
-      height: 500px;
-  }
+.lambo_about_image {
+    display: flex;
+    justify-content: center;
+}
 
-  .design2_para {
-      color: white;
-      font-size: xx-large;
-      padding: 40px;
-  }
+.design {
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+}
 
-  .Max {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      color: #b0b0b0;
-      align-items: end;
-  }
+.design_block1 {
+    font-size: xx-large;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 55px;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
 
-  .h1{
+.design_block2 {
+    margin: 50px;
+}
+
+.design2 {
+    background-color: black;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 30px;
+}
+
+.design2_para {
+    color: white;
+    font-size: large;
+    padding: 40px;
+    text-align: center;
+    
+}
+
+.design_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Max {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #b0b0b0;
+    align-items: end;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.h1 {
     padding-top: 20px;
     margin-right: 15px;
-  }
+}
 
-   .Maxx {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      font-size: 70px;
-      color: white;
-  }
+.Maxx {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 70px;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+}
 
-  .h2{
+.h2 {
     margin-left: 15px;
-  }
+}
 
-  .huracan-speed{
+.huracan-speed {
     background-color: #1a1a1a;
-  }
+    padding: 30px;
+}
 
-  .huracan-logo{
+.huracan-logo {
     display: flex;
     justify-content: center;
     height: 70px;
-  }
+}
 
-  .huracan-para{
+.huracan-para {
     color: white;
     font-size: x-large;
     display: flex;
-    margin: 0px 50px 0px 50px;
+    margin: 0px 50px;
     align-items: center;
-  }
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        position: static;
+        background-color: rgba(0, 6, 10, 0.9);
+        padding: 10px;
+    }
+
+    .menu {
+        width: 100%;
+        font-size: large;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .container1 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .lamboimg {
+        height: auto;
+    }
+
+    .container2 {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .about_image {
+        height: 200px;
+        margin: 40px auto;
+    }
+
+    .design {
+        flex-direction: column;
+    }
+
+    .design2 {
+        flex-direction: column;
+    }
+
+    .text2 {
+        font-size: large;
+        margin: 20px;
+    }
+
+    .Maxx {
+        font-size: 40px;
+        flex-direction: column;
+    }
+
+    .Max {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .fotter-logo {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .footer-media {
+        width: 100%;
+        align-items: center;
+    }
+
+    .huracan-para {
+        margin: 20px;
+    }
+}
