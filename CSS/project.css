@@ -281,7 +281,9 @@ body {
 }
 
 .design_block2 {
-    margin: 50px;
+    display: flex;
+    align-items: center;
+    
 }
 
 .design2 {
