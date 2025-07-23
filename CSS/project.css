@@ -1,7 +1,10 @@
+* {
+    box-sizing: border-box;
+}
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 .bg {
@@ -32,13 +35,14 @@ body {
 .img {
     height: 80px;
     margin-left: 20px;
+    max-width: 100%;
 }
 
 .menu {
     align-items: start;
     width: 50%;
     font-weight: bold;
-    font-size: xx-large;
+    font-size: clamp(1rem, 3vw, 1.8rem);
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: space-evenly;
@@ -66,9 +70,10 @@ body {
 }
 
 .lamboimg {
-    height: 627px;
     width: 100%;
+    height: auto;
     object-fit: cover;
+    max-width: 100%;
 }
 
 .container2 {
@@ -80,12 +85,11 @@ body {
     padding: 40px;
 }
 
-
 .card {
     background-color: #ebefd5;
     width: 100%;
     max-width: 310px;
-    min-height: 520px; 
+    min-height: 60vh;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -94,12 +98,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
+    font-size: 14px;
 }
 
 .card:hover {
     transform: translateY(-5px);
 }
-
 
 .lambocard {
     display: flex;
@@ -108,14 +112,13 @@ body {
     flex-grow: 1;
 }
 
-
 .urus {
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+    max-width: 100%;
 }
-
 
 .carname {
     font-size: 22px;
@@ -125,7 +128,6 @@ body {
     color: black;
 }
 
-
 .para {
     font-size: 14px;
     line-height: 1.5;
@@ -134,27 +136,6 @@ body {
     margin: 0;
 }
 
-
-@media (max-width: 768px) {
-    .container2 {
-        padding: 20px;
-        gap: 20px;
-    }
-
-    .card {
-        width: 100%;
-        max-width: none;
-        min-height: unset; 
-    }
-
-    .carname {
-        font-size: 20px;
-    }
-
-    .para {
-        font-size: 13px;
-    }
-}
 .footer {
     background-image: linear-gradient(180.4deg, rgba(0, 6, 10, 1) 1%, rgba(1, 190, 237, 1) 91.4%);
     display: flex;
@@ -185,7 +166,7 @@ body {
 .text {
     width: 90%;
     max-width: 300px;
-    font-size: 30px;
+    font-size: clamp(1rem, 5vw, 1.9rem);
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -206,6 +187,7 @@ body {
     width: 100%;
     max-width: 900px;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 .social {
@@ -231,14 +213,16 @@ body {
 }
 
 .about_image {
-    height: 300px;
+    height: auto;
+    width: 100%;
     margin: 90px 0px 0px 50px;
     display: flex;
     flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .text2 {
-    font-size: x-large;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     width: 90%;
     max-width: 900px;
     margin: 90px 10px 0px 50px;
@@ -283,7 +267,6 @@ body {
 .design_block2 {
     display: flex;
     align-items: center;
-    
 }
 
 .design2 {
@@ -295,16 +278,15 @@ body {
 
 .design2_para {
     color: white;
-    font-size: large;
+    font-size: clamp(1rem, 2vw, 1.3rem);
     padding: 40px;
     text-align: center;
 }
 
-.design_img{
+.design_img {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .Max {
@@ -315,6 +297,7 @@ body {
     align-items: end;
     flex-wrap: wrap;
     text-align: center;
+    font-size: clamp(1rem, 3vw, 2rem);
 }
 
 .h1 {
@@ -326,7 +309,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: 70px;
+    font-size: clamp(2rem, 6vw, 4.5rem);
     color: white;
     flex-wrap: wrap;
     text-align: center;
@@ -349,13 +332,13 @@ body {
 
 .huracan-para {
     color: white;
-    font-size: x-large;
-    display: flex;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
     margin: 0px 50px;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
     justify-content: center;
+    display: flex;
 }
 
 
@@ -386,10 +369,12 @@ body {
     .container2 {
         flex-direction: column;
         margin: 20px;
+        padding: 20px;
+        gap: 20px;
     }
 
     .about_image {
-        height: 200px;
+        height: auto;
         margin: 40px auto;
     }
 
@@ -426,14 +411,65 @@ body {
         padding: 10px 0;
     }
 
-    .footer-media {
-        width: 100%;
+    .huracan-para {
+        margin: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo {
+        height: 60px;
+    }
+
+    .img {
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    .menu {
+        font-size: medium;
+        flex-direction: column;
         align-items: center;
     }
 
-   
+    .card {
+        font-size: 13px;
+        min-height: unset;
+    }
 
+    .carname {
+        font-size: 18px;
+    }
+
+    .para {
+        font-size: 12px;
+    }
+
+    .text2,
+    .design2_para,
     .huracan-para {
-        margin: 20px;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .Maxx {
+        font-size: 28px;
+    }
+
+    .Max {
+        font-size: 14px;
+    }
+
+    .footer-media {
+        padding: 10px;
+    }
+
+    .social_logo {
+        gap: 5px;
+    }
+
+    .text {
+        font-size: 18px;
     }
 }
