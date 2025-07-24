@@ -235,11 +235,19 @@ body {
     font-size: x-large;
     display: flex;
     align-items: center;
+    width: 90%;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    
 }
 
 .lambo_about_image {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .design {
