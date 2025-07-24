@@ -7,6 +7,78 @@
     <title>Huracan</title>
     <link rel="stylesheet" href="../CSS/project.css">
     <link rel="stylesheet" href="../CSS/footer.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #fff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .huracan-speed {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .Max,
+        .Maxx {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 10px 0;
+            color: white;
+        }
+
+        .h1,
+        .h2 {
+            flex: 1 1 30%;
+            font-size: 1.8rem;
+            margin: 10px;
+        }
+
+        .h2 {
+            font-weight: bold;
+            color: #cc0000;
+        }
+
+        .huracan-logo {
+            margin: 20px 0;
+        }
+
+        .huracan-para {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+
+        @media (max-width: 768px) {
+
+            .h1,
+            .h2 {
+                font-size: 1.2rem;
+                flex: 1 1 100%;
+            }
+
+            .huracan-para {
+                padding: 0 15px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -24,36 +96,39 @@
     </div>
 
     <div>
-        <img src="../Images/lambo_huracan2.webp" alt="lambo_huracan2" width="100%">
+        <img src="../Images/lambo_huracan2.webp" alt="lambo_huracan2">
     </div>
 
     <div class="huracan-speed">
 
         <div class="Max">
             <h1 class="h1">Max Power</h1>
-            <h1 class="h1">Max Power</h1>
+            <h1 class="h1">Top Speed</h1>
             <h1 class="h1">0-100km/h</h1>
         </div>
 
         <div class="Maxx">
-            <h1 class="h2">449</h1>
-            <h1 class="h2">260</h1>
+            <h1 class="h2">449 kW</h1>
+            <h1 class="h2">260 km/h</h1>
             <h1 class="h2">3.4s</h1>
         </div>
 
         <div class="huracan-logo">
             <img src="../Images/huracan-logo.svg" alt="huracan-logo">
         </div>
+
         <div class="huracan-para">
-            <p>The first of its kind, the Huracán Sterrato explores a new frontier in driving pleasure, designed to push
+            <p>
+                The first of its kind, the Huracán Sterrato explores a new frontier in driving pleasure, designed to
+                push
                 the envelope when the asphalt ends. The super sports car is equipped with a dedicated iteration of the
                 LDVI (Lamborghini Integrated Vehicle Dynamics) system, featuring specific Strada and Sport calibrations
                 and introducing Rally mode. Like a work of art, it represents the leading edge of innovation: the super
-                sports car concept imagined in a radically new way. </p>
+                sports car concept imagined in a radically new way.
+            </p>
         </div>
 
     </div>
-
 
 
 
@@ -67,7 +142,8 @@
                 <div class="contact-info">
                     <h3>Contact Information</h3>
 
-                    <a href="https://www.google.com/maps/place/W+21st+St,+New+York,+NY,+USA/@40.7439499,-74.0018362,16.94z/data=!4m6!3m5!1s0x89c259bbbf88c0b9:0xd9cee07147623496!8m2!3d40.7439737!4d-73.9993031!16s%2Fg%2F1td7jnmm?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" class="location">
+                    <a href="https://www.google.com/maps/place/W+21st+St,+New+York,+NY,+USA/@40.7439499,-74.0018362,16.94z/data=!4m6!3m5!1s0x89c259bbbf88c0b9:0xd9cee07147623496!8m2!3d40.7439737!4d-73.9993031!16s%2Fg%2F1td7jnmm?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
+                        class="location">
                         <div class="contact-item">
                             <div class="contact-icon location-icon">
                                 📍
@@ -101,13 +177,15 @@
                 <div class="social-media">
                     <h3>Follow Us</h3>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/lamborghini/?hl=en" class="social-link instagram" title="Instagram">
+                        <a href="https://www.instagram.com/lamborghini/?hl=en" class="social-link instagram"
+                            title="Instagram">
                             📷
                         </a>
                         <a href="https://github.com/" class="social-link github" title="GitHub">
                             🐙
                         </a>
-                        <a href="https://x.com/Lamborghini?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="social-link twitter" title="Twitter">
+                        <a href="https://x.com/Lamborghini?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                            class="social-link twitter" title="Twitter">
                             🐦
                         </a>
                     </div>

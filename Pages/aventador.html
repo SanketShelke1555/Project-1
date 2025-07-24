@@ -7,6 +7,85 @@
     <title>Aventador</title>
     <link rel="stylesheet" href="../CSS/project.css">
     <link rel="stylesheet" href="../CSS/footer.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #fff;
+        }
+
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+
+        .design {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .design_block1,
+        .design_block2 {
+            flex: 1 1 45%;
+            min-width: 300px;
+        }
+
+        .design_block1 h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .design_block1 p {
+            font-size: 1rem;
+            margin-left: 20px;
+        }
+
+
+        img[alt="urus_logo.webp"] {
+            height: 1px;
+            width: 100%;
+        }
+
+
+        @media (max-width: 768px) {
+            .design {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .design_block1,
+            .design_block2 {
+                flex: 1 1 100%;
+                min-width: 100%;
+            }
+
+            .design_block1 h1 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .design_block1 p {
+                font-size: 1rem;
+                margin-left: 0;
+                text-align: justify;
+            }
+        }
+    </style>
+
+
+
 </head>
 
 <body>
@@ -24,48 +103,48 @@
     </div>
 
     <div>
-        <img src="../Images/aventador_content.webp" alt="aventador_content" width="100%" height="900px">
+        <img src="../Images/aventador_content.webp" alt="aventador_content">
     </div>
 
     <div class="design">
         <div class="design_block1">
             <h1>OVERVIEW</h1>
-            <p style="margin-left: 30px;">Lamborghini created the Aventador SVJ to embrace challenges head-on, combining
-                cutting-edge technology with extraordinary design, while always refusing to compromise. In a future
-                driven by technology, it’s easy to lose the genuine thrill of driving. But in the future shaped by
-                Lamborghini, this won’t be left behind, because there will always be a driver behind the wheel. </p>
+            <p>
+                Lamborghini created the Aventador SVJ to embrace challenges head-on, combining
+                cutting-edge technology with extraordinary design, while always refusing to compromise.
+                In a future driven by technology, it’s easy to lose the genuine thrill of driving.
+                But in the future shaped by Lamborghini, this won’t be left behind, because there will always be a
+                driver behind the wheel.
+            </p>
         </div>
-
         <div class="design_block2">
-            <img src="../Images/aventador_2.webp" alt="aventador_2.webp" height="500px">
+            <img src="../Images/aventador_2.webp" alt="aventador_2.webp">
         </div>
     </div>
 
     <div>
-        <img src="../Images/aventador_3.webp" alt="aventador_3.webp" width="100%">
+        <img src="../Images/aventador_3.webp" alt="aventador_3.webp">
     </div>
 
     <div class="design">
         <div class="design_block1">
             <h1>INTERIOR</h1>
-            <p style="margin-left: 30px;">The technological look of carbon fiber, featured in the monocoque as well as
+            <p>
+                The technological look of carbon fiber, featured in the monocoque as well as
                 the doors, seats, center tunnel and console, coexists with a design of clear aeronautical inspiration,
                 while the leather and Alcantara upholstery adds a bold touch to the luxurious interior.
                 But it is the refined details of the cross-stitching and special SVJ plaque that confer a truly unique
                 character to this remarkable engineering gem.
             </p>
         </div>
-
         <div class="design_block2">
-            <img src="../Images/aventador_4.webp" alt="aventador_4.webp" height="500px">
+            <img src="../Images/aventador_4.webp" alt="aventador_4.webp">
         </div>
     </div>
 
-
     <div>
-        <img src="../Images/urus_logo.webp" alt="urus_logo.webp" height="1px">
+        <img src="../Images/urus_logo.webp" alt="urus_logo.webp">
     </div>
-
 
 
     <footer class="footer">
@@ -74,7 +153,8 @@
                 <div class="contact-info">
                     <h3>Contact Information</h3>
 
-                    <a href="https://www.google.com/maps/place/W+21st+St,+New+York,+NY,+USA/@40.7439499,-74.0018362,16.94z/data=!4m6!3m5!1s0x89c259bbbf88c0b9:0xd9cee07147623496!8m2!3d40.7439737!4d-73.9993031!16s%2Fg%2F1td7jnmm?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" class="location">
+                    <a href="https://www.google.com/maps/place/W+21st+St,+New+York,+NY,+USA/@40.7439499,-74.0018362,16.94z/data=!4m6!3m5!1s0x89c259bbbf88c0b9:0xd9cee07147623496!8m2!3d40.7439737!4d-73.9993031!16s%2Fg%2F1td7jnmm?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
+                        class="location">
                         <div class="contact-item">
                             <div class="contact-icon location-icon">
                                 📍
@@ -108,13 +188,15 @@
                 <div class="social-media">
                     <h3>Follow Us</h3>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/lamborghini/?hl=en" class="social-link instagram" title="Instagram">
+                        <a href="https://www.instagram.com/lamborghini/?hl=en" class="social-link instagram"
+                            title="Instagram">
                             📷
                         </a>
                         <a href="https://github.com/" class="social-link github" title="GitHub">
                             🐙
                         </a>
-                        <a href="https://x.com/Lamborghini?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="social-link twitter" title="Twitter">
+                        <a href="https://x.com/Lamborghini?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                            class="social-link twitter" title="Twitter">
                             🐦
                         </a>
                     </div>

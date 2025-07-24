@@ -7,6 +7,95 @@
     <title>Urus</title>
     <link rel="stylesheet" href="../CSS/project.css">
     <link rel="stylesheet" href="../CSS/footer.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #fff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .design,
+        .design2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .design_block1,
+        .design_block2,
+        .design2_para,
+        .design_img {
+            flex: 1 1 45%;
+            min-width: 300px;
+        }
+
+        .design_block1 h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .design_block1 p,
+        .design2_para {
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        .design_block1 p {
+            margin-left: 20px;
+        }
+
+        .design_img {
+            text-align: center;
+        }
+
+        
+        @media (max-width: 768px) {
+
+            .design,
+            .design2 {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .design_block1,
+            .design_block2,
+            .design2_para,
+            .design_img {
+                flex: 1 1 100%;
+                min-width: 100%;
+            }
+
+            .design_block1 h1 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .design_block1 p,
+            .design2_para {
+                font-size: 0.95rem;
+                margin-left: 0;
+            }
+
+            .design_img img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -24,65 +113,56 @@
     </div>
 
     <div>
-        <img src="../Images/urus_page.jpg" alt="urus_page.jpg" height="800px" width="100%">
+        <img src="../Images/urus_page.jpg" alt="urus_page">
     </div>
-
-
 
     <div class="design">
         <div class="design_block1">
             <h1>DESIGN</h1>
-            <p style="margin-left: 30px;">A declaration of freedom, Urus enables you to discover any terrain, from track
-                to sand, ice, gravel or
-                rocks.
+            <p>
+                A declaration of freedom, Urus enables you to discover any terrain, from track to sand, ice, gravel or rocks.
                 It is the absolute all-round super sports car and more. It allows you to explore new paths and new ways
-                to
-                express yourself—to accept challenges confidently and to live life to the fullest. You are not afraid to
-                go
-                far: this is what you aspire to. Unlock any road, unlock your personality.</p>
+                to express yourself—to accept challenges confidently and to live life to the fullest. You are not afraid to
+                go far: this is what you aspire to. Unlock any road, unlock your personality.
+            </p>
         </div>
 
         <div class="design_block2">
-            <img src="../Images/lambo_urus2.webp" alt="lambo_urus2.webp" height="500px">
+            <img src="../Images/lambo_urus2.webp" alt="lambo_urus2">
         </div>
     </div>
 
     <div>
-        <img src="../Images/lambo_urus3.webp" alt="lambo_urus3.webp" width="100%">
+        <img src="../Images/lambo_urus3.webp" alt="lambo_urus3">
     </div>
 
-
-
     <div class="design2">
-        <div>
-            <p class="design2_para">Lamborghini Urus is the first Super Sport Utility Vehicle in the world, merging the
-                soul of a super
+        <div class="design2_para">
+            <p>
+                Lamborghini Urus is the first Super Sport Utility Vehicle in the world, merging the soul of a super
                 sports car with the practical functionality of an SUV. Powered by Lamborghini’s 4.0-liter twin turbo V8
                 engine and, in the case of Urus SE, a powerful electric motor, the Urus embodies a performance mindset
                 that combines Fun-to-Drive with astounding vehicle capabilities. The design, performance, driving
                 dynamics, and unbridled emotion flow effortlessly into this visionary realization of authentic
-                Lamborghini DNA, revolutionizing an entire segment.</p>
+                Lamborghini DNA, revolutionizing an entire segment.
+            </p>
         </div>
 
         <div class="design_img">
-            <img src="../Images/urus_logo.webp" alt="urus_logo.webp" height="500px">
+            <img src="../Images/urus_logo.webp" alt="urus_logo">
         </div>
     </div>
 
 
 
-
-
-
-
-
-      <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="contact-info">
                     <h3>Contact Information</h3>
 
-                    <a href="https://www.google.com/maps/place/W+21st+St,+New+York,+NY,+USA/@40.7439499,-74.0018362,16.94z/data=!4m6!3m5!1s0x89c259bbbf88c0b9:0xd9cee07147623496!8m2!3d40.7439737!4d-73.9993031!16s%2Fg%2F1td7jnmm?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" class="location">
+                    <a href="https://www.google.com/maps/place/W+21st+St,+New+York,+NY,+USA/@40.7439499,-74.0018362,16.94z/data=!4m6!3m5!1s0x89c259bbbf88c0b9:0xd9cee07147623496!8m2!3d40.7439737!4d-73.9993031!16s%2Fg%2F1td7jnmm?authuser=0&entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D"
+                        class="location">
                         <div class="contact-item">
                             <div class="contact-icon location-icon">
                                 📍
@@ -116,13 +196,15 @@
                 <div class="social-media">
                     <h3>Follow Us</h3>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/lamborghini/?hl=en" class="social-link instagram" title="Instagram">
+                        <a href="https://www.instagram.com/lamborghini/?hl=en" class="social-link instagram"
+                            title="Instagram">
                             📷
                         </a>
                         <a href="https://github.com/" class="social-link github" title="GitHub">
                             🐙
                         </a>
-                        <a href="https://x.com/Lamborghini?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="social-link twitter" title="Twitter">
+                        <a href="https://x.com/Lamborghini?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                            class="social-link twitter" title="Twitter">
                             🐦
                         </a>
                     </div>
